@@ -23,7 +23,7 @@ export default function TogetherHome() {
       <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50">
         <div className="md:w-1/2 space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            TOGET<span className="text-red-600">H</span>ER:<br />
+            TOGET<span className="text-red">H</span>ER:<br />
             INDIA’S MOST<br />
             POWERFUL FEMALE FOUNDER NETWORK
           </h1>
@@ -80,7 +80,7 @@ export default function TogetherHome() {
             </div>
           </div>
           <div className="space-y-4">
-            <img src={ founderImg } alt="Founder Group" className="rounded-lg" />
+            <div className="founder-voices-img text-center"><img src={ founderImg } alt="Founder Group" className="rounded-lg" /></div>
             <div className="text-center mt-6">
               <Button className="my-button">ADD MY STARTUP</Button>
               <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
