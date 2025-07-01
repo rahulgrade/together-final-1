@@ -51,7 +51,7 @@ export default function TogetherHome() {
           <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-4 border rounded-lg">
-              <img src="https://via.placeholder.com/96" alt="Founder 1" className="rounded-full mx-auto mb-4" />
+              <img src="./assets/hero.jpg" alt="Founder 1" className="rounded-full mx-auto mb-4" />
               <p className="italic">“Together gave me the courage to go bigger.”</p>
               <p className="font-semibold mt-2">Rhea, EdTech Founder</p>
             </div>
