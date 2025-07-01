@@ -3,16 +3,17 @@ import React from "react";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Input } from "./components/ui/input";
+import './styles/custom.css';
 
 import heroImg from "./assets/hero.jpg";
 import chantelleImg from "./assets/founders/chantelle.jpg";
 import nimratImg from "./assets/founders/nimrat.jpg";
-import connectIcon from "./assets/icons/connect.svg";
-import fundIcon from "./assets/icons/fund.svg";
-import talkIcon from "./assets/icons/talk.svg";
-import brandIcon from "./assets/icons/brand.svg";
-import spotlightIcon from "./assets/icons/spotlight.svg";
-import podcastIcon from "./assets/icons/podcast.svg";
+import connectIcon from "./assets/icons/connect.png";
+import fundIcon from "./assets/icons/fund.png";
+import talkIcon from "./assets/icons/talk.png";
+import brandIcon from "./assets/icons/brand.png";
+import spotlightIcon from "./assets/icons/spotlight.png";
+import podcastIcon from "./assets/icons/podcast.png";
 
 export default function TogetherHome() {
   return (
@@ -28,8 +29,8 @@ export default function TogetherHome() {
             From Goa to global — Together helps you connect with like-minded founders, raise funds, grow your company and build your personal brand.
           </p>
           <div className="space-x-4 mt-4">
-            <Button className="bg-red-600 hover:bg-red-700 text-white">JOIN THE COMMUNITY</Button>
-            <Button variant="outline">I’M LOOKING FOR FUNDING</Button>
+            <Button className="my-button">JOIN THE COMMUNITY</Button>
+            <Button variant="outline" className="white-outline-button">I’M LOOKING FOR FUNDING</Button>
           </div>
         </div>
         <img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" />
@@ -79,7 +80,7 @@ export default function TogetherHome() {
           <img src={ heroImg } alt="Founder Group" className="rounded-lg" />
         </div>
         <div className="text-center mt-6">
-          <Button className="bg-red-600 hover:bg-red-700 text-white">ADD MY STARTUP</Button>
+          <Button className="my-button">ADD MY STARTUP</Button>
           <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
         </div>
       </section>
