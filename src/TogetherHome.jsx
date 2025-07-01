@@ -6,6 +6,7 @@ import { Input } from "./components/ui/input";
 import './styles/custom.css';
 
 import heroImg from "./assets/hero.jpg";
+import founderImg from "./assets/founders/founder-voices.jpg";
 import chantelleImg from "./assets/founders/chantelle.jpg";
 import nimratImg from "./assets/founders/nimrat.jpg";
 import connectIcon from "./assets/icons/connect.png";
@@ -22,7 +23,7 @@ export default function TogetherHome() {
       <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50">
         <div className="md:w-1/2 space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            TOGET<span className="text-orange-600">HER</span>:<br />
+            TOGET<span className="text-red-600">H</span>ER:<br />
             INDIA’S MOST<br />
             POWERFUL FEMALE FOUNDER NETWORK
           </h1>
@@ -61,9 +62,9 @@ export default function TogetherHome() {
 
       {/* Founder Voices */ }
       <section className="p-8 bg-gray-50">
-        <h2 className="text-2xl font-bold mb-6 text-left">FOUNDER VOICES</h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
+            <h2 className="text-2xl font-bold mb-6 text-left">FOUNDER VOICES</h2>
             <div className="flex items-center gap-4">
               <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
               <div>
@@ -78,12 +79,15 @@ export default function TogetherHome() {
               </div>
             </div>
           </div>
-          <img src={ heroImg } alt="Founder Group" className="rounded-lg" />
+          <div className="space-y-4">
+            <img src={ founderImg } alt="Founder Group" className="rounded-lg" />
+            <div className="text-center mt-6">
+              <Button className="my-button">ADD MY STARTUP</Button>
+              <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
+            </div>
+          </div>
         </div>
-        <div className="text-center mt-6">
-          <Button className="my-button">ADD MY STARTUP</Button>
-          <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
-        </div>
+
       </section>
 
       {/* Startup Belongs Section */ }

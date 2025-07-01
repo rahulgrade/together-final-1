@@ -1,5 +1,5 @@
 .my-button {
-    background: #d6582f;
+    background: #bb000b;
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
@@ -12,6 +12,6 @@
     font-weight: 600;
 }
 
-.text-orange-600 {
-    color: #d6582f;
+.text-red-600 {
+    color: #bb000b;
 }
