@@ -106,7 +106,7 @@ export default function TogetherHome() {
           </div>
           <div>
             <img src={ podcastIcon } alt="Podcast" className="mx-auto mb-2" />
-            <p className="font-semibold"><a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">PODCAST</a></p>
+            <p className="font-semibold"><a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank" rel="noopener noreferrer">PODCAST</a></p>
           </div>
         </div>
       </section>
