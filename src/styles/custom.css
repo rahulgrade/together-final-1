@@ -16,7 +16,8 @@
     color: #bb000b;
 }
 
-.founder-voices-img {
+.founder-voices-img,
+.podcast-img {
     max-width: 500px;
     margin: 0 auto;
 }

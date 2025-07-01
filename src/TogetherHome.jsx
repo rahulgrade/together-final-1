@@ -15,6 +15,8 @@ import talkIcon from "./assets/icons/talk.png";
 import brandIcon from "./assets/icons/brand.png";
 import spotlightIcon from "./assets/icons/spotlight.png";
 import podcastIcon from "./assets/icons/podcast.png";
+import podcastImg from "./assets/podcast/podcast-img.jpg";
+
 
 export default function TogetherHome() {
   return (
@@ -43,19 +45,19 @@ export default function TogetherHome() {
         <h2 className="text-2xl font-bold mb-8">WHAT YOU’LL FIND AT TOGETHER</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <img src={ connectIcon } alt="Connections" className="mx-auto mb-2" />
-            <h3 className="font-bold">Connections That Count</h3>
-            <p className="text-sm">Meet investors, unicorn founders & future cofounders.</p>
+            <img src={ fundIcon } alt="Funding" className="mx-auto mb-2" />
+            <h3 className="font-bold">Funding Resources</h3>
+            <p className="text-sm">Grants, investors, and pitch opportunities curated for female founders.</p>
           </div>
           <div>
-            <img src={ fundIcon } alt="Funding" className="mx-auto mb-2" />
-            <h3 className="font-bold">Funding Opportunities</h3>
-            <p className="text-sm">Get access to India’s most-active diversity-focused fund.</p>
+            <img src={ connectIcon } alt="Connections" className="mx-auto mb-2" />
+            <h3 className="font-bold">Founder Network</h3>
+            <p className="text-sm">Join a trusted network of peers to share, learn, and grow together.</p>
           </div>
           <div>
             <img src={ talkIcon } alt="Conversations" className="mx-auto mb-2" />
-            <h3 className="font-bold">Real Conversations</h3>
-            <p className="text-sm">Not panels — real talk with those who’ve done it.</p>
+            <h3 className="font-bold">Expert Access</h3>
+            <p className="text-sm">Tap into mentors, advisors, and industry experts across domains.</p>
           </div>
         </div>
       </section>
@@ -64,29 +66,16 @@ export default function TogetherHome() {
       <section className="p-8 bg-gray-50">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold mb-6 text-left">FOUNDER VOICES</h2>
-            <div className="flex items-center gap-4">
-              <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
-              <div>
-                <p>“I came to Together feeling like an Imposter. I left feeling like a founder.”</p>
-                <p className="text-sm font-semibold">Chantelle, New Delhi</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
-              <div>
-                <p>“Best founder event I’ve been to. Period.”</p>
-              </div>
+            <h2 className="text-2xl font-bold mb-6 text-left">Join the Tribe</h2>
+            <div className="text-center mt-6">
+              <p className="text mt-2">We vet every startup carefully to ensure alignment.</p>
+              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">
+                <Button className="my-button">ADD MY STARTUP</Button>
+              </a>
             </div>
           </div>
           <div className="space-y-4">
             <div className="founder-voices-img"><img src={ founderImg } alt="Founder Group" className="rounded-lg" /></div>
-            <div className="text-center mt-6">
-              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">
-                <Button className="my-button">ADD MY STARTUP</Button>
-              </a>
-              <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
-            </div>
           </div>
         </div>
 
@@ -109,6 +98,37 @@ export default function TogetherHome() {
             <p className="font-semibold"><a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank" rel="noopener noreferrer">PODCAST</a></p>
           </div>
         </div>
+      </section>
+
+      {/* Founder Spotlight */ }
+      <section className="text-center py-12">
+        <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-4 border rounded-lg">
+            <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
+            <p className="italic">Grants, investors, and pitch opportunities curated for female founders.</p>
+            <p className="font-semibold mt-2">Rhea, EdTech Founder</p>
+          </div>
+          <div className="p-4 border rounded-lg">
+            <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
+            <p className="italic">“It’s more than a network—it’s my startup tribe.”</p>
+            <p className="font-semibold mt-2">Nimrat, Consumer Brand Founder</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Podcast Feature */ }
+      <section class="bg-gray-100 text-center p-6">
+        <h2 class="text-2xl font-bold">🎧 Podcast Feature</h2>
+        <p>Meet our 98-year-old founder who started at 91. Proof it’s never too late.</p>
+        <div className="space-y-4">
+          <div className="podcast-img">
+            <a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank">
+              <img src={ podcastImg } alt="Founder Group" className="rounded-lg" />
+            </a>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank" class="text-blue-600 underline mt-2 inline-block">Listen to the Episode</a>
       </section>
 
       {/* Footer */ }
