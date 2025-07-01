@@ -4,79 +4,113 @@ import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Input } from "./components/ui/input";
 
+import heroImg from "./assets/hero.jpg";
+import chantelleImg from "./assets/founders/chantelle.jpg";
+import nimratImg from "./assets/founders/nimrat.jpg";
+import connectIcon from "./assets/icons/connect.svg";
+import fundIcon from "./assets/icons/fund.svg";
+import talkIcon from "./assets/icons/talk.svg";
+import brandIcon from "./assets/icons/brand.svg";
+import spotlightIcon from "./assets/icons/spotlight.svg";
+import podcastIcon from "./assets/icons/podcast.svg";
+
 export default function TogetherHome() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <nav className="sticky top-0 bg-white shadow p-4 flex justify-between items-center z-50">
-        <h1 className="text-xl font-bold">Together</h1>
-        <div className="space-x-4">
-          <Button variant="ghost">Home</Button>
-          <Button variant="ghost">Funding</Button>
-          <Button variant="ghost">Community</Button>
-          <Button variant="ghost">Resources</Button>
-          <Button variant="outline">Login</Button>
-        </div>
-      </nav>
-
-      <div className="p-6 space-y-10">
-        <section className="text-center space-y-4">
-          <h2 className="text-4xl font-bold">Together: India’s Most Powerful Female Founder Network</h2>
-          <p className="text-lg max-w-2xl mx-auto">
-            From our roots in Goa to WhatsApp groups across the country, Together is your platform to connect, fund, grow, and thrive.
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
+      {/* Hero Section */ }
+      <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50">
+        <div className="md:w-1/2 space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            TOGET<span className="text-red-600">HER</span>:<br />
+            INDIA’S MOST POWERFUL FEMALE FOUNDER NETWORK
+          </h1>
+          <p className="text-lg">
+            From Goa to global — Together helps you connect with like-minded founders, raise funds, grow your company and build your personal brand.
           </p>
-          <div className="flex justify-center space-x-4">
-            <Button>I’m Looking for Funding</Button>
-            <Button variant="outline">Join the Community</Button>
+          <div className="space-x-4 mt-4">
+            <Button className="bg-red-600 hover:bg-red-700 text-white">JOIN THE COMMUNITY</Button>
+            <Button variant="outline">I’M LOOKING FOR FUNDING</Button>
           </div>
-        </section>
-
-        <section className="text-center">
-          <h2 className="text-2xl font-semibold mb-4">What You’ll Find at Together</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card><CardContent><h3 className="font-semibold">Funding Resources</h3><p>Grants, investors, and pitch opportunities curated for female founders.</p></CardContent></Card>
-            <Card><CardContent><h3 className="font-semibold">Founder Network</h3><p>Join a trusted network of peers to share, learn, and grow together.</p></CardContent></Card>
-            <Card><CardContent><h3 className="font-semibold">Expert Access</h3><p>Tap into mentors, advisors, and industry experts across domains.</p></CardContent></Card>
-          </div>
-        </section>
-
-        <section className="text-center bg-gray-50 p-6 rounded-lg">
-          <h2 className="text-2xl font-semibold">Join the Tribe</h2>
-          <p>Enter your startup into our founder database to get discovered and supported.</p>
-          <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">
-            <Button className="mt-2">Submit Your Startup</Button>
-          </a>
-        </section>
-
-        <section className="text-center py-12">
-          <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-4 border rounded-lg">
-              <img src="./assets/hero.jpg" alt="Founder 1" className="rounded-full mx-auto mb-4" />
-              <p className="italic">“Together gave me the courage to go bigger.”</p>
-              <p className="font-semibold mt-2">Rhea, EdTech Founder</p>
-            </div>
-            <div className="p-4 border rounded-lg">
-              <img src="https://via.placeholder.com/96" alt="Founder 2" className="rounded-full mx-auto mb-4" />
-              <p className="italic">“It’s more than a network—it’s my startup tribe.”</p>
-              <p className="font-semibold mt-2">Nimrat, Consumer Brand Founder</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-gray-100 text-center p-6">
-          <h2 className="text-2xl font-bold">🎧 Podcast Feature</h2>
-          <p>Meet our 98-year-old founder who started at 91. Proof it’s never too late.</p>
-          <a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank" className="text-blue-600 underline mt-2 inline-block">Listen to the Episode</a>
-        </section>
-      </div>
-
-      <footer className="bg-white border-t p-6 text-center mt-12">
-        <p className="text-sm">&copy; 2025 Together. All rights reserved.</p>
-        <div className="flex justify-center space-x-4 mt-2">
-          <a href="#" className="text-blue-500">Instagram</a>
-          <a href="#" className="text-blue-500">LinkedIn</a>
-          <a href="#" className="text-blue-500">Newsletter</a>
         </div>
+        <img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" />
+      </section>
+
+      {/* Features */ }
+      <section className="p-8 text-center">
+        <h2 className="text-2xl font-bold mb-8">WHAT YOU’LL FIND AT TOGETHER</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
+            <img src={ connectIcon } alt="Connections" className="mx-auto mb-2" />
+            <h3 className="font-bold">Connections That Count</h3>
+            <p className="text-sm">Meet investors, unicorn founders & future cofounders.</p>
+          </div>
+          <div>
+            <img src={ fundIcon } alt="Funding" className="mx-auto mb-2" />
+            <h3 className="font-bold">Funding Opportunities</h3>
+            <p className="text-sm">Get access to India’s most-active diversity-focused fund.</p>
+          </div>
+          <div>
+            <img src={ talkIcon } alt="Conversations" className="mx-auto mb-2" />
+            <h3 className="font-bold">Real Conversations</h3>
+            <p className="text-sm">Not panels — real talk with those who’ve done it.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Voices */ }
+      <section className="p-8 bg-gray-50">
+        <h2 className="text-2xl font-bold mb-6 text-center">FOUNDER VOICES</h2>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
+              <div>
+                <p>“I came to Together feeling like an Imposter. I left feeling like a founder.”</p>
+                <p className="text-sm font-semibold">Chantelle, New Delhi</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
+              <div>
+                <p>“Best founder event I’ve been to. Period.”</p>
+              </div>
+            </div>
+          </div>
+          <img src={ heroImg } alt="Founder Group" className="rounded-lg" />
+        </div>
+        <div className="text-center mt-6">
+          <Button className="bg-red-600 hover:bg-red-700 text-white">ADD MY STARTUP</Button>
+          <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
+        </div>
+      </section>
+
+      {/* Startup Belongs Section */ }
+      <section className="p-8 text-center">
+        <h2 className="text-2xl font-bold mb-6">YOUR STARTUP BELONGS HERE</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
+            <img src={ brandIcon } alt="Brand" className="mx-auto mb-2" />
+            <p className="font-semibold">BUILD MY <span className="font-normal">PERSONAL BRAND</span></p>
+          </div>
+          <div>
+            <img src={ spotlightIcon } alt="Spotlight" className="mx-auto mb-2" />
+            <p className="font-semibold">FOUNDER SPOTLIGHT</p>
+          </div>
+          <div>
+            <img src={ podcastIcon } alt="Podcast" className="mx-auto mb-2" />
+            <p className="font-semibold">PODCAST</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */ }
+      <footer className="p-6 border-t text-center text-sm text-gray-600">
+        <div className="space-x-4">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <p className="mt-2">&copy; 2025 Together. All rights reserved.</p>
       </footer>
     </div>
   );
