@@ -82,7 +82,9 @@ export default function TogetherHome() {
           <div className="space-y-4">
             <div className="founder-voices-img"><img src={ founderImg } alt="Founder Group" className="rounded-lg" /></div>
             <div className="text-center mt-6">
-              <Button className="my-button">ADD MY STARTUP</Button>
+              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">
+                <Button className="my-button">ADD MY STARTUP</Button>
+              </a>
               <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
             </div>
           </div>
@@ -104,7 +106,7 @@ export default function TogetherHome() {
           </div>
           <div>
             <img src={ podcastIcon } alt="Podcast" className="mx-auto mb-2" />
-            <p className="font-semibold">PODCAST</p>
+            <p className="font-semibold"><a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">PODCAST</a></p>
           </div>
         </div>
       </section>
