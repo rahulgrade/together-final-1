@@ -80,7 +80,7 @@ export default function TogetherHome() {
             </div>
           </div>
           <div className="space-y-4">
-            <div className="founder-voices-img text-center"><img src={ founderImg } alt="Founder Group" className="rounded-lg" /></div>
+            <div className="founder-voices-img"><img src={ founderImg } alt="Founder Group" className="rounded-lg" /></div>
             <div className="text-center mt-6">
               <Button className="my-button">ADD MY STARTUP</Button>
               <p className="text-xs mt-2">We vet every startup carefully to ensure alignment.</p>
