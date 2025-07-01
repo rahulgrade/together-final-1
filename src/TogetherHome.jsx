@@ -22,8 +22,9 @@ export default function TogetherHome() {
       <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50">
         <div className="md:w-1/2 space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            TOGET<span className="text-red-600">HER</span>:<br />
-            INDIA’S MOST POWERFUL FEMALE FOUNDER NETWORK
+            TOGET<span className="text-orange-600">HER</span>:<br />
+            INDIA’S MOST<br />
+            POWERFUL FEMALE FOUNDER NETWORK
           </h1>
           <p className="text-lg">
             From Goa to global — Together helps you connect with like-minded founders, raise funds, grow your company and build your personal brand.
@@ -60,7 +61,7 @@ export default function TogetherHome() {
 
       {/* Founder Voices */ }
       <section className="p-8 bg-gray-50">
-        <h2 className="text-2xl font-bold mb-6 text-center">FOUNDER VOICES</h2>
+        <h2 className="text-2xl font-bold mb-6 text-left">FOUNDER VOICES</h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <div className="flex items-center gap-4">
