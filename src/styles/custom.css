@@ -22,6 +22,10 @@
     margin: 0 auto;
 }
 
+.fonder-spolight-wrapper h2 {
+    font-size: 30px;
+}
+
 .founder-img {
     margin: 0 auto 10px;
     width: 91px;
