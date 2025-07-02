@@ -15,7 +15,7 @@ import talkIcon from "./assets/icons/talk.png";
 import brandIcon from "./assets/icons/brand.png";
 import spotlightIcon from "./assets/icons/spotlight.png";
 import podcastIcon from "./assets/icons/podcast.png";
-import podcastImg from "./assets/podcast/podcast-img.jpg";
+import podcastImg from "./assets/podcast/podcast-img.png";
 
 
 export default function TogetherHome() {
