@@ -101,7 +101,7 @@ export default function TogetherHome() {
       </section>
 
       {/* Founder Spotlight */ }
-      <section className="text-center p-8 py-12 fonder-spolight-wrapper">
+      <section className="text-center p-8 py-12 fonder-spolight-wrapper bg-gray-100">
         <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-4 border rounded-lg">
@@ -122,7 +122,7 @@ export default function TogetherHome() {
       </section>
 
       {/* Podcast Feature */ }
-      <section class="bg-gray-100 text-center p-6">
+      <section class="text-center p-6">
         <h2 class="text-2xl font-bold">🎧 Podcast Feature</h2>
         <p>Meet our 98-year-old founder who started at 91. Proof it’s never too late.</p>
         <div className="space-y-4 mt-4">
