@@ -69,7 +69,7 @@ export default function TogetherHome() {
             <h2 className="text-2xl font-bold mb-6 text-left">Join the Tribe</h2>
             <div className="text-center mt-6">
               <p className="text mt-2">We vet every startup carefully to ensure alignment.</p>
-              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer">
+              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Button className="my-button">ADD MY STARTUP</Button>
               </a>
             </div>
