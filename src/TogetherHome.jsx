@@ -65,11 +65,11 @@ export default function TogetherHome() {
       {/* Founder Voices */ }
       <section className="p-8 bg-gray-50">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold mb-6 text-left">Join the Tribe</h2>
-            <div className="text-center mt-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-2xl font-bold mb-6">Join the Tribe</h2>
+            <div className="mt-6">
               <p className="text mt-2">We vet every startup carefully to ensure alignment.</p>
-              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="https://form.typeform.com/to/yZKv4xsc" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
                 <Button className="my-button">ADD MY STARTUP</Button>
               </a>
             </div>
@@ -101,16 +101,20 @@ export default function TogetherHome() {
       </section>
 
       {/* Founder Spotlight */ }
-      <section className="text-center py-12">
+      <section className="text-center py-12 fonder-spolight-wrapper">
         <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-4 border rounded-lg">
-            <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
+            <div className="founder-img">
+              <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
+            </div>
             <p className="italic">Grants, investors, and pitch opportunities curated for female founders.</p>
             <p className="font-semibold mt-2">Rhea, EdTech Founder</p>
           </div>
           <div className="p-4 border rounded-lg">
-            <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
+            <div className="founder-img">
+              <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
+            </div>
             <p className="italic">“It’s more than a network—it’s my startup tribe.”</p>
             <p className="font-semibold mt-2">Nimrat, Consumer Brand Founder</p>
           </div>
@@ -121,7 +125,7 @@ export default function TogetherHome() {
       <section class="bg-gray-100 text-center p-6">
         <h2 class="text-2xl font-bold">🎧 Podcast Feature</h2>
         <p>Meet our 98-year-old founder who started at 91. Proof it’s never too late.</p>
-        <div className="space-y-4">
+        <div className="space-y-4 mt-4">
           <div className="podcast-img">
             <a href="https://www.youtube.com/watch?v=PMRF2vT37YI" target="_blank">
               <img src={ podcastImg } alt="Founder Group" className="rounded-lg" />
