@@ -24,4 +24,7 @@
 
 .founder-img {
     margin: 0 auto 10px;
+    width: 91px;
+    height: 91px;
+    overflow: hidden;
 }

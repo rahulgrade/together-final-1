@@ -101,19 +101,19 @@ export default function TogetherHome() {
       </section>
 
       {/* Founder Spotlight */ }
-      <section className="text-center py-12 fonder-spolight-wrapper">
+      <section className="text-center p-8 py-12 fonder-spolight-wrapper">
         <h2 className="text-2xl font-bold mb-6">Founder Spotlight</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-4 border rounded-lg">
             <div className="founder-img">
-              <img src={ chantelleImg } alt="Chantelle" className="w-16 h-16 rounded-full" />
+              <img src={ chantelleImg } alt="Chantelle" className="rounded-full" />
             </div>
             <p className="italic">Grants, investors, and pitch opportunities curated for female founders.</p>
             <p className="font-semibold mt-2">Rhea, EdTech Founder</p>
           </div>
           <div className="p-4 border rounded-lg">
             <div className="founder-img">
-              <img src={ nimratImg } alt="Nimrat" className="w-16 h-16 rounded-full" />
+              <img src={ nimratImg } alt="Nimrat" className="rounded-full" />
             </div>
             <p className="italic">“It’s more than a network—it’s my startup tribe.”</p>
             <p className="font-semibold mt-2">Nimrat, Consumer Brand Founder</p>
