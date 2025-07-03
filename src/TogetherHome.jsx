@@ -56,6 +56,7 @@ export default function TogetherHome() {
         <div className="hidden md:flex space-x-4">
           <NavButtons />
         </div>
+        <button className="px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">Login</button>
       </nav>
 
       {/* Mobile Menu */ }
@@ -65,7 +66,6 @@ export default function TogetherHome() {
         </div>
       ) }
 
-      <button className="px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">Login</button>
 
       <div className="space-y-10">
         {/* Hero Section */ }
