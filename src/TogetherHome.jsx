@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { Input } from "./components/ui/input";
-import React, { useState } from "react";
 import './styles/custom.css';
 
 import heroImg from "./assets/hero.jpg";
@@ -18,6 +17,7 @@ import spotlightIcon from "./assets/icons/spotlight.png";
 import podcastIcon from "./assets/icons/podcast.png";
 import podcastImg from "./assets/podcast/podcast-img.png";
 
+
 const NavButtons = () => (
   <>
     <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Home</button>
@@ -28,9 +28,9 @@ const NavButtons = () => (
   </>
 );
 
-const [isOpen, setIsOpen] = useState(false);
 
 export default function TogetherHome() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <nav className="sticky top-0 bg-white shadow p-4 flex justify-between items-center z-50">
@@ -61,7 +61,7 @@ export default function TogetherHome() {
 
       {/* Mobile Menu */ }
       { isOpen && (
-        <div className="md:hidden flex flex-col space-y-2 px-4 pb-4">
+        <div className="md:hidden flex flex-col space-y-2 px-4 pb-4 transition-all duration-300">
           <NavButtons />
         </div>
       ) }
