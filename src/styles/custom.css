@@ -45,3 +45,7 @@
 .menu button:hover {
     color: #bb000b;
 }
+
+.menu button.btn-black-otline:hover {
+    color: #fff;
+}
