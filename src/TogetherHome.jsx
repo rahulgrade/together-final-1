@@ -20,10 +20,10 @@ import podcastImg from "./assets/podcast/podcast-img.png";
 
 const NavButtons = () => (
   <>
-    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Home</button>
-    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Funding</button>
-    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Community</button>
-    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Resources</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600">Home</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600">Funding</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600">Community</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600">Resources</button>
   </>
 );
 
@@ -32,7 +32,7 @@ export default function TogetherHome() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
-      <nav className="sticky top-0 bg-white shadow p-4 flex justify-between items-center z-50">
+      <nav className="sticky top-0 bg-white shadow p-4 flex justify-between items-center z-50 menu">
         <h1 className="text-xl font-bold">Together</h1>
 
         {/* Hamburger Menu for Mobile */ }

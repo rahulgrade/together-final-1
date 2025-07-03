@@ -32,3 +32,7 @@
     height: 91px;
     overflow: hidden;
 }
+
+.menu button:hover {
+    color: #bb000b;
+}
