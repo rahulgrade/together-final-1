@@ -24,7 +24,7 @@ const NavButtons = () => (
     <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Funding</button>
     <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Community</button>
     <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Resources</button>
-    <button className="px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">Login</button>
+    <button className="px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50 md:hidden">Login</button>
   </>
 );
 
