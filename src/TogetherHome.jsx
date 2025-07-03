@@ -37,7 +37,7 @@ export default function TogetherHome() {
 
         {/* Hamburger Menu for Mobile */ }
         <button
-          className="md:hidden text-blue-600 focus:outline-none"
+          className="md:hidden text-blue-600 focus:outline-none ml-auto"
           onClick={ () => setIsOpen(!isOpen) }
         >
           {/* Hamburger Icon */ }
@@ -56,12 +56,15 @@ export default function TogetherHome() {
         <div className="hidden md:flex space-x-4">
           <NavButtons />
         </div>
-        <button className="px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">Login</button>
+        <button className="ml-4 px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">
+          Login
+        </button>
+
       </nav>
 
       {/* Mobile Menu */ }
       { isOpen && (
-        <div className="md:hidden flex flex-col space-y-2 px-4 pb-4 transition-all duration-300">
+        <div className="ml-auto md:hidden flex flex-col space-y-2 px-4 pb-4 transition-all duration-300 mr-4">
           <NavButtons />
         </div>
       ) }
