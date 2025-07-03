@@ -20,10 +20,10 @@ import podcastImg from "./assets/podcast/podcast-img.png";
 
 const NavButtons = () => (
   <>
-    <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Home</button>
-    <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Funding</button>
-    <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Community</button>
-    <button className="px-4 py-2 rounded font-semibold text-blue-600 hover:underline">Resources</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Home</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Funding</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Community</button>
+    <button className="px-4 py-2 rounded font-semibold text-black-600 hover:underline">Resources</button>
   </>
 );
 
@@ -37,7 +37,7 @@ export default function TogetherHome() {
 
         {/* Hamburger Menu for Mobile */ }
         <button
-          className="ml-auto md:hidden text-blue-600 focus:outline-none"
+          className="ml-auto md:hidden text-black-600 focus:outline-none"
           onClick={ () => setIsOpen(!isOpen) }
         >
           {/* Hamburger Icon */ }
@@ -56,7 +56,7 @@ export default function TogetherHome() {
         <div className=" ml-auto hidden md:flex space-x-4">
           <NavButtons />
         </div>
-        <button className="ml-4 px-4 py-2 rounded font-semibold border border-blue-600 text-blue-600 hover:bg-blue-50">
+        <button className="ml-4 px-4 py-2 rounded font-semibold border border-black-600 text-black-600 hover:bg-black-50">
           Login
         </button>
 
