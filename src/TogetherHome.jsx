@@ -83,8 +83,8 @@ export default function TogetherHome() {
               From Goa to global — Together helps you connect with like-minded founders, raise funds, grow your company and build your personal brand.
             </p>
             <div className="space-x-4 mt-4">
-              <Button className="my-button">JOIN THE COMMUNITY</Button>
-              <Button variant="outline" className="white-outline-button">I’M LOOKING FOR FUNDING</Button>
+              <Button className="my-button mb-2">JOIN THE COMMUNITY</Button>
+              <Button variant="outline" className="white-outline-button mb-2">I’M LOOKING FOR FUNDING</Button>
             </div>
           </div>
           <img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" />
