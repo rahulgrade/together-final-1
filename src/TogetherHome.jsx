@@ -37,7 +37,7 @@ export default function TogetherHome() {
 
         {/* Hamburger Menu for Mobile */ }
         <button
-          className="md:hidden text-blue-600 focus:outline-none"
+          className="ml-auto md:hidden text-blue-600 focus:outline-none"
           onClick={ () => setIsOpen(!isOpen) }
         >
           {/* Hamburger Icon */ }
@@ -64,7 +64,7 @@ export default function TogetherHome() {
 
       {/* Mobile Menu */ }
       { isOpen && (
-        <div className="ml-auto md:hidden flex flex-col space-y-2 px-4 pb-4 transition-all duration-300 mr-4">
+        <div className="md:hidden flex flex-col space-y-2 px-4 pb-4 transition-all duration-300 mr-4">
           <NavButtons />
         </div>
       ) }
