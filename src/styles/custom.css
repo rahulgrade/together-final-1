@@ -71,8 +71,10 @@
 }
 
 @media (max-width: 899px) {
-    .hero-section-wrapper .hero-content> :not([hidden])~ :not([hidden]) {
-        margin-left: 0;
+
+    .my-button,
+    .white-outline-button {
+        font-size: 11px;
     }
 }
 
