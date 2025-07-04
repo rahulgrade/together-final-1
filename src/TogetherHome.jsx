@@ -87,7 +87,7 @@ export default function TogetherHome() {
               <Button variant="outline" className="white-outline-button mb-2">I’M LOOKING FOR FUNDING</Button>
             </div>
           </div>
-          <div className="hero-img"><img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" /></div>
+          <div className="hero-img md:w-1/2"><img src={ heroImg } alt="Together Hero" className="rounded-lg mt-6 md:mt-0" /></div>
         </section>
 
         {/* Features */ }
