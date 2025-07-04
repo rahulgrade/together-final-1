@@ -173,7 +173,7 @@ export default function TogetherHome() {
 
         {/* Podcast Feature */ }
         <section class="text-center p-6">
-          <h2 class="text-2xl font-bold">🎧 Podcast Feature</h2>
+          <h2 class="text-2xl font-bold mb-6">🎧 Podcast Feature</h2>
           <p>Meet our 98-year-old founder who started at 91. Proof it’s never too late.</p>
           <div className="space-y-4 mt-4">
             <div className="podcast-img">
