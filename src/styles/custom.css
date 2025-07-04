@@ -105,12 +105,8 @@
     .menu button {
         font-size: 14px;
     }
-}
 
-@media (max-width: 575px) {
-
-    .my-button,
-    .white-outline-button {
-        font-size: 13px;
+    .hero-content {
+        padding-right: 0;
     }
 }
