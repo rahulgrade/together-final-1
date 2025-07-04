@@ -62,6 +62,14 @@
     }
 }
 
+@media (max-width: 991px) {
+
+    .my-button,
+    .white-outline-button {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 767px) {
     .fonder-spolight-wrapper h2 {
         font-size: 24px;
