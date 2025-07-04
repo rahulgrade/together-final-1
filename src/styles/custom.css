@@ -71,7 +71,7 @@
 }
 
 @media (max-width: 899px) {
-    .hero-section-wrapper .hero-content .white-outline-button {
+    .hero-section-wrapper .hero-content .white-outline-button:not([hidden])~ :not([hidden]) {
         margin-left: 0;
     }
 }
