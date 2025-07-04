@@ -72,8 +72,8 @@ export default function TogetherHome() {
 
       <div className="space-y-10">
         {/* Hero Section */ }
-        <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50">
-          <div className="md:w-1/2 space-y-4">
+        <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gray-50 hero-section-wrapper">
+          <div className="md:w-1/2 space-y-4 hero-content">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               TOGET<span className="text-red">H</span>ER:<br />
               INDIA’S MOST<br />
@@ -87,7 +87,7 @@ export default function TogetherHome() {
               <Button variant="outline" className="white-outline-button mb-2">I’M LOOKING FOR FUNDING</Button>
             </div>
           </div>
-          <img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" />
+          <div className="hero-img"><img src={ heroImg } alt="Together Hero" className="md:w-1/2 rounded-lg mt-6 md:mt-0" /></div>
         </section>
 
         {/* Features */ }
