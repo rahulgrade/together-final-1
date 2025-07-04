@@ -25,6 +25,10 @@
     color: #bb000b;
 }
 
+.hero-content {
+    padding-right: 15px;
+}
+
 .founder-voices-img,
 .podcast-img {
     max-width: 500px;
@@ -53,11 +57,6 @@
 @media (max-width: 767px) {
     .fonder-spolight-wrapper h2 {
         font-size: 24px;
-    }
-
-    .founder-voices-img,
-    .podcast-img {
-        max-width: 100%;
     }
 
     .founder-img {
