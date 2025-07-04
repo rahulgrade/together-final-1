@@ -12,11 +12,11 @@
     font-weight: 600;
 }
 
-.btn-black-otline {
+.btn-black-outline {
     border: 1px solid #000;
 }
 
-.btn-black-otline:hover {
+.btn-black-outline:hover {
     background: #000;
     color: #fff;
 }
@@ -50,7 +50,7 @@
     color: #bb000b;
 }
 
-.menu button.btn-black-otline:hover {
+.menu button.btn-black-outline:hover {
     color: #fff;
 }
 

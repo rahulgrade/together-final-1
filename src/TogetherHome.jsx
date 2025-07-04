@@ -56,7 +56,7 @@ export default function TogetherHome() {
         <div className="ml-auto hidden md:flex space-x-4">
           <NavButtons />
         </div>
-        <button className="ml-4 px-4 py-2 rounded font-semibold border border-black-600 text-black-600 btn-black-otline">
+        <button className="ml-4 px-4 py-2 rounded font-semibold border border-black-600 text-black-600 btn-black-outline">
           Login
         </button>
 
